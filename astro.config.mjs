@@ -6,19 +6,32 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: "Anwar's Portfolio",
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/ShoAnn' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Background and Education',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Background', slug: 'about/background' },
+						{ label: 'Education', slug: 'about/education' },
+						{ label: 'Contacts', slug: 'about/contacts' },
 					],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'Projects',
+					collapsed: false,
+					items: [
+						{ label: 'All Projects', slug: 'projects' },
+						{
+							label: 'RAG Legal Chatbot',
+							items: [
+								{ label: 'Overview', slug: 'projects/rag-chatbot/overview' },
+								{ label: 'Features', slug: 'projects/rag-chatbot/features' },
+								{ label: 'Tech Stack', slug: 'projects/rag-chatbot/tech-stack' },
+								{ label: 'Insights', slug: 'projects/rag-chatbot/insights' },
+							],
+						},
+					],
 				},
 			],
 		}),

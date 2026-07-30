@@ -1,0 +1,43 @@
+---
+title: Background and Education
+description: M. Shokhibul Anwar, background, educations, skills, and experience.
+---
+
+export function getYearsSince(pastDateString) {
+    const pastDate = new Date(pastDateString);
+    const today = new Date();
+    let years = today.getFullYear() - pastDate.getFullYear();
+    const monthDiff = today.getMonth() - pastDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < pastDate.getDate())) {
+        years--;
+    }
+    return years;
+}
+export const myAge = getYearsSince("2002-06-06")
+export const isFreshGrad = getYearsSince("2026-01-15") < 1
+
+## Bio
+
+M. Shokhibul Anwar is a {myAge} y/o {isFreshGrad && "Fresh-graduate"} Software Engineer from Ponorogo, Indonesia.
+
+## Skills
+
+- **Frontend:** List your frontend technologies
+- **Backend:** List your backend technologies
+- **Tools & Platforms:** List tools and platforms you use
+- **Languages:** List programming languages you know
+
+## Experience
+
+### Job Title — Company Name
+*Month Year – Present*
+
+- Describe your key responsibilities and achievements
+- Use bullet points for clarity
+- Quantify results where possible
+
+### Previous Job Title — Previous Company
+*Month Year – Month Year*
+
+- Describe your role and contributions
+- Highlight specific technologies you worked with
