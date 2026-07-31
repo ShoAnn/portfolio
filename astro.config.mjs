@@ -31,6 +31,15 @@ export default defineConfig({
 								{ label: 'Insights', slug: 'projects/rag-chatbot/insights' },
 							],
 						},
+						{
+							label: 'Get a J*b',
+							items: [
+								{ label: 'Overview', slug: 'projects/get-a-job/overview' },
+								{ label: 'Features', slug: 'projects/get-a-job/features' },
+								{ label: 'Tech Stack', slug: 'projects/get-a-job/tech-stack' },
+								{ label: 'Insights', slug: 'projects/get-a-job/insights' },
+							],
+						},
 					],
 				},
 			],

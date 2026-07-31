@@ -1,5 +1,5 @@
 ---
-title: Example Project — Tech Stack
+title: RAG Legal Chatbot — Tech Stack
 description: Technologies, tools, and architecture used in the project.
 ---
 
