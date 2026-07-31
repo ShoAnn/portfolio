@@ -5,30 +5,38 @@ description: Technologies, tools, and architecture used in the project.
 
 ## Architecture
 
-Describe the overall architecture of the project. Include diagrams or text-based overviews of how components interact.
+Standard legal RAG pipeline, more details on the [Github repo](https://github.com/ShoAnn/indo-legal) and my 
 
-## Frontend
+## Programming Language
 
-- **Framework:** e.g., React, Vue, Astro
-- **Styling:** e.g., Tailwind CSS, CSS Modules
-- **State Management:** e.g., Zustand, Redux
-- **Key Libraries:** List important frontend libraries
+Everything in this project is written in Python
 
-## Backend
+## Platform
 
-- **Runtime:** e.g., Node.js, Deno
-- **Framework:** e.g., Express, Hono, Fastify
-- **Database:** e.g., PostgreSQL, SQLite, MongoDB
-- **ORM / Query Builder:** e.g., Prisma, Drizzle, Kysely
+- Google Colab: scraping data, parsing, cleaning, data preprocessing, training, testing
+- Kaggle Kernel: Subsitute if Colab is down or reaches limit
 
-## DevOps & Deployment
+## Python Library:
 
-- **Hosting:** e.g., Vercel, Netlify, Railway
-- **CI/CD:** e.g., GitHub Actions
-- **Containerization:** e.g., Docker
+- Data processing: pandas, numpy, matplotlib, datasets (Huggingface)
+- Rag Pipeline: LangChain, transformers, unsloth, datasets (HuggingFace)
+- scraping: beautifulsoup, selenium, puppeteer
 
-## Development Tools
+## Pre-trained LLM
+- SeaLLMs-v3-7B
+- Llama-SEA-LION-v3.5-8B
+- Gemma-3-4B
+- Qwen3-8B
 
-- **Package Manager:** e.g., npm, pnpm, bun
-- **Linting / Formatting:** e.g., ESLint, Prettier, Biome
-- **Testing:** e.g., Vitest, Playwright
+## Evaluation
+
+- RAGAS, python standard library
+
+## Demo
+
+- Gradio
+
+## Code & Data Hosting
+
+- [Github](https://github.com/ShoAnn/indo-legal)
+- [Huggingface](https://huggingface.co/ShoAnn)
