@@ -14,6 +14,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers Indonesian criminal 
 
 ## How it works
 ![basic rag implementation schema](../../../../assets/how-rag-works.webp)
+This project follows basic RAG schema that was first introduced back in 2023. The main focus of this project is to test the effectiveness of the method itself to process legal text, thus, not much pre or post-processing steps added to the process the data.
 
 ## Timeline
 
