@@ -3,8 +3,10 @@ title: M. Shokhibul Anwar's Portfolio
 description: ''
 template: splash
 hero:
+  title: "Hi, I'm Anwar"
+  tagline: "Welcome to my site, I'm a fresh-grad software engineer from Ponorogo, Indonesia. I can build simple to moderately complex websites, i know some data science and machine learning, and very eager to learn any tech."
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/hero-img.webp
   actions:
     - text: More about me
       link: /about/background
@@ -15,3 +17,15 @@ hero:
       link: /about/contacts
       variant: minimal
 ---
+export function getYearsSince(pastDateString) {
+    const pastDate = new Date(pastDateString);
+    const today = new Date();
+    let years = today.getFullYear() - pastDate.getFullYear();
+    const monthDiff = today.getMonth() - pastDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < pastDate.getDate())) {
+        years--;
+    }
+    return years;
+}
+export const myAge = getYearsSince("2002-06-06")
+export const isFreshGrad = getYearsSince("2026-01-15") < 1

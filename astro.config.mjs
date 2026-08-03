@@ -7,6 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: "Anwar's Portfolio",
+			customCss: [
+				"./src/styles/global.css",
+			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/ShoAnn' }],
 			sidebar: [
 				{
